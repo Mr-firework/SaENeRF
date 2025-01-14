@@ -1,0 +1,22 @@
+
+[project]
+name = "saenerf"
+description = "SaENeRF: Suppressing Artifacts in Event-based Neural Radiance Fields"
+version = "1.0.0"
+
+dependencies = [
+    "nerfstudio=1.1.4", 
+    "numba", 
+    "torchtyping"
+] 
+
+[tool.setuptools.packages.find]
+include = ["saenerf*"]
+
+[project.entry-points.'nerfstudio.method_configs']
+saenerf   = 'saenerf.saenerf_config:saenerf'
+eventnerf = 'saenerf.saenerf_config:eventnerf'
+enerf     = 'saenerf.saenerf_config:enerf'
+
+[project.entry-points.'nerfstudio.dataparser_configs']
+saenerf_dataparser = 'saenerf.dataparser_config:saenerf_dataparser'
