@@ -1,5 +1,7 @@
 # SaENeRF: Suppressing Artifacts in Event-based Neural Radiance Fields
+
 Yuanjian Wang, Yufei Deng, Rong Xiao, Jiahao Fan, Chenwei Tang, Xiong Deng, and Jiancheng Lv
+
 IJCNN 2025
 ## 1. Installation
 ```bash
